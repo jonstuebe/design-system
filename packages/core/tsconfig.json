@@ -1,5 +1,14 @@
 {
-  "extends": "@jonstuebe/tsconfig/react-library.json",
+  "extends": "@jonstuebe/tsconfig/expo.json",
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true
+  },
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
 }
